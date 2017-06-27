@@ -11,7 +11,55 @@
 }
 /* Stylowanie głównego menu*/
 
+.buttonscontainer{
+    
+    margin-top:10%;
+}
+
 /*Koniec stylowania głównego menu*/
+
+/* Stylowanie Nowej gry*/
+
+#newgamepage{
+    background: url('../img/gamebg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#timer {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    display:block;
+    float:left;
+    color: white;
+}
+
+#clock{
+    text-align:center;
+    font-size: 32px;
+    font-family: 'Calibri';
+}
+
+#checkbutton {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    display:block;
+    float:left;
+}
+
+#checkbtn{
+    position:absolute;
+    margin:0px;
+    margin-top:25px;
+    padding:0px;
+    width:50%;
+    text-align:center;
+}
+
+
+/*Koniec stylowania Nowej gry*/
 
 /*Style dla strony Zasady gry*/
 
@@ -31,10 +79,10 @@
     background-repeat: no-repeat;
 }
 
-.header{
+.header{/* style wspólne dla zasad, wyników i opcji*/
     border:0px;
     opacity:0.8;
-    background-color: #69C2FD !important;
+    background-color: #69C2FD !important;  
     color:#000000 !important;
     font-family:'Calibri';
     font-size:110%;
@@ -58,7 +106,7 @@
     opacity:0.85;
 }
 
-.footer{
+.footer{/* style wspólne dla zasad, wyników i poziomu trudności*/
     display:block;
     position:fixed;
     bottom:0px; 
