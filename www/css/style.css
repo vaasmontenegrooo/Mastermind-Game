@@ -10,6 +10,11 @@
     border:0 !important;
 }
 /* Stylowanie głównego menu*/
+#menu{
+    background: url('../img/Splash.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 .buttonscontainer{
     
@@ -58,6 +63,38 @@
     text-align:center;
 }
 
+.singlebox  {
+    display:block;
+    float:left;
+    background: url('../img/singleboxnotactive.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.empty{
+    background: url('../img/singleboxactive.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.toolate{
+    background: url('../img/singleboxtoolate.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.orange{
+    background: url('../img/orange.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.blue{
+    background: url('../img/blue.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 
 /*Koniec stylowania Nowej gry*/
 
@@ -89,11 +126,6 @@
     font-weight:bold !important;
 }
 
-.buttonscontainer{
-    
-    margin-top:10%;
-}
-
 .menubutton, .difficultybutton {
     width:70% !important; 
     color:#ffffff !important;
@@ -104,6 +136,15 @@
     margin-right: auto;
     background-color: #1B3C5B !important;
     opacity:0.85;
+}
+
+.menubutton:hover
+{
+    width:70% !important;
+    color:#000000 !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #69C2FD !important;
 }
 
 .footer{/* style wspólne dla zasad, wyników i poziomu trudności*/
