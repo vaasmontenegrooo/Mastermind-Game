@@ -3,3 +3,84 @@
     padding:0px !important;
     
 }
+
+#newgamepage .ui-content{
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+}
+/* Stylowanie głównego menu*/
+
+/*Koniec stylowania głównego menu*/
+
+/*Style dla strony Zasady gry*/
+
+#rules {
+    background: url('../img/rulesbg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*Koniec styli dla Zasad gry */
+
+/*Style dla strony Opcji gry*/
+
+#options{
+    background: url('../img/optionsbg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header{
+    border:0px;
+    opacity:0.8;
+    background-color: #69C2FD !important;
+    color:#000000 !important;
+    font-family:'Calibri';
+    font-size:110%;
+    font-weight:bold !important;
+}
+
+.buttonscontainer{
+    
+    margin-top:10%;
+}
+
+.menubutton, .difficultybutton {
+    width:70% !important; 
+    color:#ffffff !important;
+    font-family:'Calibri';
+    font-size:120%;
+    font-weight:normal !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1B3C5B !important;
+    opacity:0.85;
+}
+
+.footer{
+    display:block;
+    position:fixed;
+    bottom:0px; 
+    right:0px;
+    left:0px;
+    border:0px;
+    opacity:0.8;
+    background-color: #69C2FD !important;
+    color:#ffffff !important;
+    font-family:'Calibri';
+    font-size:120%;
+    font-weight:normal !important;
+}
+
+/*Koniec styli Opcji gry*/
+
+/*Style dla Najlepsze wyniki*/
+
+#bestresults{
+    background: url('../img/bestbg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*Koniec styli dla Najlepsze wyniki*/

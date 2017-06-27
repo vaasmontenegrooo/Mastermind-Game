@@ -11,10 +11,12 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/config.js"></script>
+    <script src="js/newgame.js"></script>
+    <script src="js/options.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Main menu page-->
+    <!-- Menu główne-->
     <div data-role="page" id="menu">
         <div class="buttonscontainer">
             <a href="#newgamepage" data-transition="slide" id="newgame" class="ui-btn ui-corner-all menubutton">Nowa Gra</a>
@@ -23,19 +25,32 @@
             <a href="#bestresults" data-transition="slide" class="ui-btn ui-corner-all menubutton">Najlepsze Wyniki</a>
         </div>
     </div>
+    <!-- Nowa gra-->
     <div data-role="page" id="newgamepage">
 
     </div>
-    <!-- Rules page-->
+    <!-- Zasady gry-->
     <div data-role="page" id="rules">
 
     </div>
-    <!-- Options page-->
+    <!-- Opcje gry-->
     <div data-role="page" id="options">
-
+        <div data-role="header" class="header">
+            <h1>Poziom trudności</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="buttonscontainer">
+                <button id="easy" class="ui-btn ui-corner-all difficultybutton">ŁATWY</button>
+                <button id="normal" class="ui-btn ui-corner-all difficultybutton">NORMALNY</button>
+                <button id="hard" class="ui-btn ui-corner-all difficultybutton">TRUDNY</button>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <a href="#menu" data-transition="slide" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">MENU</a>
+        </div>
     </div>
-    <!-- Best results page-->
-    <div data-role="page" id="bestresults" class="background">
+    <!-- Najlepsze wyniki-->
+    <div data-role="page" id="bestresults">
     
     </div>
 </body>
