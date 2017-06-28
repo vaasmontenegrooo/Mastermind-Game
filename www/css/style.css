@@ -1,4 +1,4 @@
-﻿body{
+body{
     margin:0px !important;
     padding:0px !important;
     
@@ -93,6 +93,43 @@
     background: url('../img/blue.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.red{
+    background: url('../img/red.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.green{
+    background: url('../img/green.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.violet{
+    background: url('../img/violet.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.yellow{
+    background: url('../img/yellow.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.popupmenua{
+    margin:0px;
+    padding:0px;
+}
+
+.deactivation{
+    pointer-events:none;
+}
+
+.notactive{
+    display:none !important;
 }
 
 
