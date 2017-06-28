@@ -143,6 +143,17 @@ body{
     background-repeat: no-repeat;
 }
 
+.backbutton{/* style wspólne dla zasad, wyników i opcji*/
+    width:50px;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1B3C5B !important;
+    color:#ffffff !important;
+    font-family:'Calibri';
+    font-weight:normal !important;
+    }
+
 /*Koniec styli dla Zasad gry */
 
 /*Style dla strony Opcji gry*/
@@ -182,6 +193,18 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-color: #69C2FD !important;
+}
+
+.difficultybuttonactive{
+    width:70% !important;
+    color:#000000 !important;
+    font-family:'Calibri';
+    font-size:120%;
+    font-weight:normal !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #69C2FD !important;
+    opacity:0.85;
 }
 
 .footer{/* style wspólne dla zasad, wyników i poziomu trudności*/

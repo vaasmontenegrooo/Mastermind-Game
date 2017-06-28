@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -19,14 +19,15 @@
     <!-- Menu główne-->
     <div data-role="page" id="menu">
         <div class="buttonscontainer">
-            <a href="#newgamepage" data-transition="slide" id="newgame" class="ui-btn ui-corner-all menubutton">Nowa Gra</a>
-            <a href="#rules" data-transition="slide" class="ui-btn ui-corner-all menubutton">Zasady Gry</a>
-            <a href="#options" data-transition="slide" class="ui-btn ui-corner-all menubutton">Poziom trudności</a>
-            <a href="#bestresults" data-transition="slide" class="ui-btn ui-corner-all menubutton">Najlepsze Wyniki</a>
+            <a href="#newgamepage" data-transition="pop" id="newgame" class="ui-btn ui-corner-all menubutton">Nowa Gra</a>
+            <a href="#rules" data-transition="pop" class="ui-btn ui-corner-all menubutton">Zasady Gry</a>
+            <a href="#options" data-transition="pop" class="ui-btn ui-corner-all menubutton">Poziom trudności</a>
+            <a href="#bestresults" data-transition="pop" class="ui-btn ui-corner-all menubutton">Najlepsze Wyniki</a>
         </div>
     </div>
-    <!-- Nowa gra-->
+    <!-- Strona Nowa gra-->
     <div data-role="page" id="newgamepage">
+
         <div class="singlerow">
             <div id="timer"><h2 id="clock"></h2></div>
             <div id="checkbuttonbox">
@@ -618,7 +619,9 @@
             <!-- koniec 1-->
         </div>
 
+
     </div>
+
     <!-- Zasady gry-->
     <div data-role="page" id="rules">
         <div data-role="header" class="header">
@@ -627,10 +630,10 @@
         <div data-role="main" class="ui-content">
         </div>
         <div data-role="footer" class="footer">
-            <a href="#menu" data-transition="slide" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">MENU</a>
+            <a href="#menu" data-transition="pop" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">WRÓĆ</a>
         </div>
     </div>
-    <!-- Opcje gry-->
+    <!-- Poziom trudności-->
     <div data-role="page" id="options">
         <div data-role="header" class="header">
             <h1>Poziom trudności</h1>
@@ -643,11 +646,12 @@
             </div>
         </div>
         <div data-role="footer" class="footer">
-            <a href="#menu" data-transition="slide" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">MENU</a>
+            <a href="#menu" data-transition="pop" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">WRÓĆ</a>
         </div>
     </div>
     <!-- Najlepsze wyniki-->
     <div data-role="page" id="bestresults">
+
         <div data-role="header" class="header">
             <h1>Najlepsze wyniki</h1>
         </div>
@@ -655,7 +659,7 @@
 
         </div>
         <div data-role="footer" class="footer">
-            <a href="#menu" data-transition="slide" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">MENU</a>
+            <a href="#menu" data-transition="pop" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">WRÓĆ</a>
         </div>
     </div>
 </body>

@@ -219,6 +219,223 @@ window.addEventListener("load", function () {
     redColorBtn83.addEventListener("click", function () { pickRed(3); }, false);;
     redColorBtn84 = document.getElementById("red84");
     redColorBtn84.addEventListener("click", function () { pickRed(4); }, false);;
+
+    //zaczepy do zielonych kulek
+    greenColorBtn11 = document.getElementById("green11");
+    greenColorBtn11.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn12 = document.getElementById("green12");
+    greenColorBtn12.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn13 = document.getElementById("green13");
+    greenColorBtn13.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn14 = document.getElementById("green14");
+    greenColorBtn14.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn21 = document.getElementById("green21");
+    greenColorBtn21.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn22 = document.getElementById("green22");
+    greenColorBtn22.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn23 = document.getElementById("green23");
+    greenColorBtn23.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn24 = document.getElementById("green24");
+    greenColorBtn24.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn31 = document.getElementById("green31");
+    greenColorBtn31.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn32 = document.getElementById("green32");
+    greenColorBtn32.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn33 = document.getElementById("green33");
+    greenColorBtn33.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn34 = document.getElementById("green34");
+    greenColorBtn34.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn41 = document.getElementById("green41");
+    greenColorBtn41.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn42 = document.getElementById("green42");
+    greenColorBtn42.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn43 = document.getElementById("green43");
+    greenColorBtn43.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn44 = document.getElementById("green44");
+    greenColorBtn44.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn51 = document.getElementById("green51");
+    greenColorBtn51.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn52 = document.getElementById("green52");
+    greenColorBtn52.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn53 = document.getElementById("green53");
+    greenColorBtn53.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn54 = document.getElementById("green54");
+    greenColorBtn54.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn61 = document.getElementById("green61");
+    greenColorBtn61.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn62 = document.getElementById("green62");
+    greenColorBtn62.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn63 = document.getElementById("green63");
+    greenColorBtn63.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn64 = document.getElementById("green64");
+    greenColorBtn64.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn71 = document.getElementById("green71");
+    greenColorBtn71.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn72 = document.getElementById("green72");
+    greenColorBtn72.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn73 = document.getElementById("green73");
+    greenColorBtn73.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn74 = document.getElementById("green74");
+    greenColorBtn74.addEventListener("click", function () { pickGreen(4); }, false);;
+
+    greenColorBtn81 = document.getElementById("green81");
+    greenColorBtn81.addEventListener("click", function () { pickGreen(1); }, false);;
+    greenColorBtn82 = document.getElementById("green82");
+    greenColorBtn82.addEventListener("click", function () { pickGreen(2); }, false);;
+    greenColorBtn83 = document.getElementById("green83");
+    greenColorBtn83.addEventListener("click", function () { pickGreen(3); }, false);;
+    greenColorBtn84 = document.getElementById("green84");
+    greenColorBtn84.addEventListener("click", function () { pickGreen(4); }, false);;
+    //zaczepy do fioletowych kulek
+    violetColorBtn11 = document.getElementById("violet11");
+    violetColorBtn11.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn12 = document.getElementById("violet12");
+    violetColorBtn12.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn13 = document.getElementById("violet13");
+    violetColorBtn13.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn14 = document.getElementById("violet14");
+    violetColorBtn14.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn21 = document.getElementById("violet21");
+    violetColorBtn21.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn22 = document.getElementById("violet22");
+    violetColorBtn22.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn23 = document.getElementById("violet23");
+    violetColorBtn23.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn24 = document.getElementById("violet24");
+    violetColorBtn24.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn31 = document.getElementById("violet31");
+    violetColorBtn31.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn32 = document.getElementById("violet32");
+    violetColorBtn32.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn33 = document.getElementById("violet33");
+    violetColorBtn33.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn34 = document.getElementById("violet34");
+    violetColorBtn34.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn41 = document.getElementById("violet41");
+    violetColorBtn41.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn42 = document.getElementById("violet42");
+    violetColorBtn42.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn43 = document.getElementById("violet43");
+    violetColorBtn43.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn44 = document.getElementById("violet44");
+    violetColorBtn44.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn51 = document.getElementById("violet51");
+    violetColorBtn51.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn52 = document.getElementById("violet52");
+    violetColorBtn52.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn53 = document.getElementById("violet53");
+    violetColorBtn53.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn54 = document.getElementById("violet54");
+    violetColorBtn54.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn61 = document.getElementById("violet61");
+    violetColorBtn61.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn62 = document.getElementById("violet62");
+    violetColorBtn62.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn63 = document.getElementById("violet63");
+    violetColorBtn63.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn64 = document.getElementById("violet64");
+    violetColorBtn64.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn71 = document.getElementById("violet71");
+    violetColorBtn71.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn72 = document.getElementById("violet72");
+    violetColorBtn72.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn73 = document.getElementById("violet73");
+    violetColorBtn73.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn74 = document.getElementById("violet74");
+    violetColorBtn74.addEventListener("click", function () { pickViolet(4); }, false);;
+
+    violetColorBtn81 = document.getElementById("violet81");
+    violetColorBtn81.addEventListener("click", function () { pickViolet(1); }, false);;
+    violetColorBtn82 = document.getElementById("violet82");
+    violetColorBtn82.addEventListener("click", function () { pickViolet(2); }, false);;
+    violetColorBtn83 = document.getElementById("violet83");
+    violetColorBtn83.addEventListener("click", function () { pickViolet(3); }, false);;
+    violetColorBtn84 = document.getElementById("violet84");
+    violetColorBtn84.addEventListener("click", function () { pickViolet(4); }, false);;
+    //zaczepy do zoltych kulek
+    yellowColorBtn11 = document.getElementById("yellow11");
+    yellowColorBtn11.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn12 = document.getElementById("yellow12");
+    yellowColorBtn12.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn13 = document.getElementById("yellow13");
+    yellowColorBtn13.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn14 = document.getElementById("yellow14");
+    yellowColorBtn14.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn21 = document.getElementById("yellow21");
+    yellowColorBtn21.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn22 = document.getElementById("yellow22");
+    yellowColorBtn22.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn23 = document.getElementById("yellow23");
+    yellowColorBtn23.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn24 = document.getElementById("yellow24");
+    yellowColorBtn24.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn31 = document.getElementById("yellow31");
+    yellowColorBtn31.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn32 = document.getElementById("yellow32");
+    yellowColorBtn32.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn33 = document.getElementById("yellow33");
+    yellowColorBtn33.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn34 = document.getElementById("yellow34");
+    yellowColorBtn34.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn41 = document.getElementById("yellow41");
+    yellowColorBtn41.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn42 = document.getElementById("yellow42");
+    yellowColorBtn42.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn43 = document.getElementById("yellow43");
+    yellowColorBtn43.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn44 = document.getElementById("yellow44");
+    yellowColorBtn44.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn51 = document.getElementById("yellow51");
+    yellowColorBtn51.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn52 = document.getElementById("yellow52");
+    yellowColorBtn52.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn53 = document.getElementById("yellow53");
+    yellowColorBtn53.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn54 = document.getElementById("yellow54");
+    yellowColorBtn54.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn61 = document.getElementById("yellow61");
+    yellowColorBtn61.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn62 = document.getElementById("yellow62");
+    yellowColorBtn62.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn63 = document.getElementById("yellow63");
+    yellowColorBtn63.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn64 = document.getElementById("yellow64");
+    yellowColorBtn64.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn71 = document.getElementById("yellow71");
+    yellowColorBtn71.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn72 = document.getElementById("yellow72");
+    yellowColorBtn72.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn73 = document.getElementById("yellow73");
+    yellowColorBtn73.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn74 = document.getElementById("yellow74");
+    yellowColorBtn74.addEventListener("click", function () { pickYellow(4); }, false);;
+
+    yellowColorBtn81 = document.getElementById("yellow81");
+    yellowColorBtn81.addEventListener("click", function () { pickYellow(1); }, false);;
+    yellowColorBtn82 = document.getElementById("yellow82");
+    yellowColorBtn82.addEventListener("click", function () { pickYellow(2); }, false);;
+    yellowColorBtn83 = document.getElementById("yellow83");
+    yellowColorBtn83.addEventListener("click", function () { pickYellow(3); }, false);;
+    yellowColorBtn84 = document.getElementById("yellow84");
+    yellowColorBtn84.addEventListener("click", function () { pickYellow(4); }, false);;
 });
 
 function randomColor(min, max) {
@@ -340,4 +557,61 @@ function time() {
         newRound();
         return;
     }
+}
+
+function checkDifficultyLevel() {
+    var i, el, element;
+    var y = sessionStorage.getItem('numbercolors');
+    switch (y) {
+        case '4':
+            el = document.getElementsByClassName("violetli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.className += " notactive";
+            }
+            el = document.getElementsByClassName("yellowli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.className += " notactive";
+            }
+            break;
+        case '5':
+            el = document.getElementsByClassName("violetli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.classList.remove("notactive");
+            }
+            el = document.getElementsByClassName("yellowli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.className += " notactive";
+            }
+            break;
+        case '6':
+            el = document.getElementsByClassName("violetli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.classList.remove("notactive");
+            }
+            el = document.getElementsByClassName("yellowli");
+            for (i = 0; i < el.length; i++) {
+                element = el.item(i);
+                element.classList.remove("notactive");
+            }
+            break;
+    }
+}
+
+function initGame() {
+    round = 1;
+    position1 = 0;
+    position2 = 0;
+    position3 = 0;
+    position4 = 0;
+    makeRandomColors();
+    screenSize();
+    clearTimeout(temporaryTime);
+    sec = getTime();
+    time();
+    checkDifficultyLevel();
 }
