@@ -276,6 +276,10 @@ body{
 /*Koniec stylowania Nowej gry*/
 
 /*Style dla strony Zasady gry*/
+.rules {
+    overflow: auto;
+    color: aliceblue;
+}
 
 #rules {
     background: url('../img/rulesbg.png');
