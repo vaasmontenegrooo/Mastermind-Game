@@ -279,7 +279,9 @@ body{
 .rules {
     overflow: auto;
     color: aliceblue;
-    text-align: justify;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
