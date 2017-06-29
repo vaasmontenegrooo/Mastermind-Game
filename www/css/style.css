@@ -279,7 +279,10 @@ body{
 .rules {
     overflow: auto;
     color: aliceblue;
+    text-align: justify;
 }
+
+
 
 #rules {
     background: url('../img/rulesbg.png');
