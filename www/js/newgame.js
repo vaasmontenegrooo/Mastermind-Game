@@ -494,6 +494,12 @@ function screenSize() {
     element = document.getElementById('checkbuttonbox');
     element.style.width = window.innerWidth * 0.5 + 'px';
     element.style.height = window.innerHeight * 0.1 + 'px';
+    element = document.getElementById('checkbtn');
+    element.style.width = window.innerWidth * 0.5 + 'px';
+    element.style.height = window.innerHeight * 0.1 + 'px';
+    element = document.getElementById('checkbtnimg');
+    element.style.width = window.innerWidth * 0.5 - 40 + 'px';
+    element.style.height = window.innerHeight * 0.1 - 20 + 'px';
 
     el = document.getElementsByClassName("popupmenua");
     for (i = 0; i < el.length; i++) {
