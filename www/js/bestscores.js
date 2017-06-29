@@ -20,10 +20,10 @@ function levelNormal() {
     var normalScoreListTemp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     var temp1, temp2, temp3;
 
-    if (localStorage.normalNickListLS === undefined) {
+    if (localStorage.getItem("normalNickListLS") === null) {
         localStorage.setItem("normalNickListLS", JSON.stringify(normalNickListTemp));
     }
-    if (localStorage.normalScoreListLS === undefined) {
+    if (localStorage.getItem("normalScoreListLS") === null) {
         localStorage.setItem("normalScoreListLS", JSON.stringify(normalScoreListTemp));
     }
     temp3 = localStorage.getItem("normalNickListLS");
@@ -104,4 +104,31 @@ function levelHard() {
         temp2.innerHTML = hardScoreListTemp[i];
     }
 
+}
+
+function isItGoodScore(x) {
+    var temp1, temp2;
+    var yesOrNo;
+    var toParse = sessionStorage.getItem('time');
+    switch (toParse) {
+        case '40':
+            temp1 = localStorage.getItem("easyScoreListLS");
+            temp2 = JSON.parse(temp1);
+            if (temp2[9] < points) yesOrNo = true;
+            else yesOrNo = false;
+            break;
+        case '30':
+            temp1 = localStorage.getItem("normalScoreListLS");
+            temp2 = JSON.parse(temp1);
+            if (temp2[9] < points) yesOrNo = true;
+            else yesOrNo = false;
+            break;
+        case '20':
+            temp1 = localStorage.getItem("hardScoreListLS");
+            temp2 = JSON.parse(temp1);
+            if (temp2[9] < points) yesOrNo = true;
+            else yesOrNo = false;
+            break;
+    }
+    return yesOrNo;
 }

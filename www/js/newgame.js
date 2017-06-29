@@ -629,6 +629,7 @@ function initGame() {
 function amIRight() {
     var correct, semiCorrect;
     var temp1, temp2;
+    if (sec < 0) sec = 0;
     var toParse = sessionStorage.getItem('time');
     switch (toParse) {
         case '40':
@@ -637,7 +638,7 @@ function amIRight() {
             break;
         case '30':
             points = points + sec * 5;
-            console.log(points, sec * 10, sec);
+            console.log(points, sec * 5, sec);
             break;
         case '20':
             points = points + sec * 10;
@@ -735,27 +736,27 @@ function amIRight() {
                 case 0:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score00";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Niestety, żadna kulka nie ma właściwego koloru i nie znajduje się na właściwym miejscu.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Niestety, żadna kulka nie ma właściwego koloru i nie znajduje się na właściwym miejscu.');
                     break;
                 case 1:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score01";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulka ma właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulka ma właściwy kolor.');
                     break;
                 case 2:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score02";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
                 case 3:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score03";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
                 case 4:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score04";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Niestety, żadna kulka nie znajduje się na właściwym miejscu, ale ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
             }
             break;
@@ -764,22 +765,22 @@ function amIRight() {
                 case 0:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score10";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Kolory pozostałych kulek nie są poprawne.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Kolory pozostałych kulek nie są poprawne.');
                     break;
                 case 1:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score11";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulka ma właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulka ma właściwy kolor.');
                     break;
                 case 2:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score12";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
                 case 3:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score13";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulka znajduje się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
             }
             break;
@@ -788,24 +789,24 @@ function amIRight() {
                 case 0:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score20";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Kolory pozostałych kulek nie są poprawne.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Kolory pozostałych kulek nie są poprawne.');
                     break;
                 case 1:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score21";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulka ma właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulka ma właściwy kolor.');
                     break;
                 case 2:
                     temp2.classList.remove("emptyscore");
                     temp2.className += " score22";
-                    alert('Koniec rundy nr: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
+                    alert('KONIEC RUNDY: ' + (round - 1) + '. Nieźle, ' + correct + ' kulki znajdują się na swoim miejscu. Dodatkowo ' + semiCorrect + ' kulki mają właściwy kolor.');
                     break;
             }
             break;
         case 3:
             temp2.classList.remove("emptyscore");
             temp2.className += " score30";
-            alert('Koniec rundy nr: ' + (round - 1) + '. Już prawie! ' + correct + ' kulki znajdują się na swoim miejscu. Czwarta kulka jest złego koloru.');
+            alert('KONIEC RUNDY: ' + (round - 1) + '. Już prawie! ' + correct + ' kulki znajdują się na swoim miejscu. Czwarta kulka jest złego koloru.');
             break;
         case 4:
             temp2.classList.remove("emptyscore");
@@ -825,9 +826,16 @@ function amIRight() {
                     break;
             }
             clearTimeout(temporaryTime);
-            alert('Koniec rundy nr: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu.');
-            window.location.href = "#menu";
-            location.reload();
+            if (isItGoodScore(points) === true) {
+                alert('KONIEC RUNDY: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Twój wynik to ' + points + ' ! Gratulacje! Wpisz się na listę najlepszych wyników.');
+                window.location.href = "#menu";
+                location.reload();
+            }
+            else {
+                alert('KONIEC RUNDY: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Twój wynik to ' + points + ' ! Niestety jest zbyt niski by trafić na listę najlepszych wyników.');
+                window.location.href = "#menu";
+                location.reload();
+            }
             break;
     }
     if (round === 9) {
