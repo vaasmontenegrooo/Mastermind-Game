@@ -498,7 +498,7 @@ function screenSize() {
     element.style.width = window.innerWidth * 0.5 + 'px';
     element.style.height = window.innerHeight * 0.1 + 'px';
     element = document.getElementById('checkbtnimg');
-    element.style.width = window.innerWidth * 0.5 - 40 + 'px';
+    element.style.width = window.innerWidth * 0.35 - 40 + 'px';
     element.style.height = window.innerHeight * 0.1 - 20 + 'px';
 
     el = document.getElementsByClassName("popupmenua");
@@ -612,6 +612,8 @@ function checkDifficultyLevel() {
 
 function initGame() {
     round = 1;
+    points = 0;
+    console.log(points);
     position1 = 0;
     position2 = 0;
     position3 = 0;
@@ -627,7 +629,23 @@ function initGame() {
 function amIRight() {
     var correct, semiCorrect;
     var temp1, temp2;
+    var toParse = sessionStorage.getItem('time');
+    switch (toParse) {
+        case '40':
+            points = points + sec * 3;
+            console.log(points, sec * 3, sec);
+            break;
+        case '30':
+            points = points + sec * 5;
+            console.log(points, sec * 10, sec);
+            break;
+        case '20':
+            points = points + sec * 10;
+            console.log(points, sec * 10, sec);
+            break;
+    }
     if (position1 === 0) {
+        points = points - 50;
         temp1 = 'imgrow' + (round - 1);
         temp2 = document.getElementsByClassName(temp1 + ' box1');
         for (i = 0; i < temp2.length; i++) {
@@ -635,8 +653,9 @@ function amIRight() {
         }
         temp1.classList.remove("empty");
         temp1.className += " toolate";
-    }
+        }
     if (position2 === 0) {
+        points = points - 50;
         temp1 = 'imgrow' + (round - 1);
         temp2 = document.getElementsByClassName(temp1 + ' box2');
         for (i = 0; i < temp2.length; i++) {
@@ -644,8 +663,9 @@ function amIRight() {
         }
         temp1.classList.remove("empty");
         temp1.className += " toolate";
-    }
+        }
     if (position3 === 0) {
+        points = points - 50;
         temp1 = 'imgrow' + (round - 1);
         temp2 = document.getElementsByClassName(temp1 + ' box3');
         for (i = 0; i < temp2.length; i++) {
@@ -653,8 +673,9 @@ function amIRight() {
         }
         temp1.classList.remove("empty");
         temp1.className += " toolate";
-    }
+        }
     if (position4 === 0) {
+        points = points - 50;
         temp1 = 'imgrow' + (round - 1);
         temp2 = document.getElementsByClassName(temp1 + ' box4');
         for (i = 0; i < temp2.length; i++) {
@@ -662,47 +683,50 @@ function amIRight() {
         }
         temp1.classList.remove("empty");
         temp1.className += " toolate";
+        
     }
-
+    console.log(points);
     temp1 = 'score' + (round - 1);
     temp2 = document.getElementById(temp1);
     correct = 0;
     semiCorrect = 0;
     var colorName = ["POMARAŃCZOWY", "NIEBIESKI", "CZERWONY", "ZIELONY", "FIOLETOWY", "ŻÓŁTY"];
-
-    if (random1 === position1) {
+    function addCorrect() {
         correct = correct + 1;
+        points = points + 50;
+        console.log(points);
     }
-    else {
-        if (random1 === position2) semiCorrect = semiCorrect + 1;
-        if (random1 === position3) semiCorrect = semiCorrect + 1;
-        if (random1 === position4) semiCorrect = semiCorrect + 1;
-    }
-
-    if (random2 === position2) {
-        correct = correct + 1;
-    }
-    else {
-        if (random2 === position1) semiCorrect = semiCorrect + 1;
-        if (random2 === position3) semiCorrect = semiCorrect + 1;
-        if (random2 === position4) semiCorrect = semiCorrect + 1;
-    }
-    if (random3 === position3) {
-        correct = correct + 1;
-    }
-    else {
-        if (random3 === position1) semiCorrect = semiCorrect + 1;
-        if (random3 === position2) semiCorrect = semiCorrect + 1;
-        if (random3 === position4) semiCorrect = semiCorrect + 1;
+    function addSemiCorrect() {
+        semiCorrect = semiCorrect + 1;
+        points = points + 20;
+        console.log(points);
     }
 
-    if (random4 === position4) {
-        correct = correct + 1;
-    }
+    if (random1 === position1) addCorrect();
     else {
-        if (random4 === position1) semiCorrect = semiCorrect + 1;
-        if (random4 === position2) semiCorrect = semiCorrect + 1;
-        if (random4 === position3) semiCorrect = semiCorrect + 1;
+        if (random1 === position2) addSemiCorrect();
+        if (random1 === position3) addSemiCorrect();
+        if (random1 === position4) addSemiCorrect();
+    }
+
+    if (random2 === position2) addCorrect();
+    else {
+        if (random2 === position1) addSemiCorrect();
+        if (random2 === position3) addSemiCorrect();
+        if (random2 === position4) addSemiCorrect();
+    }
+    if (random3 === position3) addCorrect();
+    else {
+        if (random3 === position1) addSemiCorrect();
+        if (random3 === position2) addSemiCorrect();
+        if (random3 === position4) addSemiCorrect();
+    }
+
+    if (random4 === position4) addCorrect();
+    else {
+        if (random4 === position1) addSemiCorrect();
+        if (random4 === position2) addSemiCorrect();
+        if (random4 === position3) addSemiCorrect();
     }
 
     switch (correct) {
@@ -786,8 +810,22 @@ function amIRight() {
         case 4:
             temp2.classList.remove("emptyscore");
             temp2.className += " score40";
+            switch (toParse) {
+                case '40':
+                    points = points + (8 - (round - 1)) * 250;
+                    console.log(points);
+                    break;
+                case '30':
+                    points = points + (8 - (round - 1)) * 500;
+                    console.log(points);
+                    break;
+                case '20':
+                    points = points + (8 - (round - 1)) * 1000;
+                    console.log(points);
+                    break;
+            }
             clearTimeout(temporaryTime);
-            alert('Koniec rundy nr: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Sprawdź swój wynik.');
+            alert('Koniec rundy nr: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu.');
             window.location.href = "#menu";
             location.reload();
             break;
