@@ -163,9 +163,7 @@ function sortResults(x,tempName) {
     }
     temp2[9] = x;
     temp3[9] = tempName;
-    console.log(temp2);
-    alert('');
-
+    
     for (j = 0; j < temp2.length - 1; j++)
         for (i = 0; i < temp2.length - 1; i++)
             if (temp2[i] > temp2[i + 1]) {
