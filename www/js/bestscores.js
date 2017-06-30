@@ -13,13 +13,17 @@ window.addEventListener("load", function () {
     hardbtn1.addEventListener("click", levelHard);
     hardbtn2 = document.getElementById("hardbtn2");
     hardbtn2.addEventListener("click", levelHard);
+    //playerNameBtn = document.getElementById("playernamebtn");
+    //playerNameBtn.addEventListener("click", submit);
 });
+
 
 function levelNormal() {
     var normalNickListTemp = ['BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK'];
     var normalScoreListTemp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     var temp1, temp2, temp3;
-
+    //localStorage.setItem("normalNickListLS", JSON.stringify(normalNickListTemp));
+    //localStorage.setItem("normalScoreListLS", JSON.stringify(normalScoreListTemp));
     if (localStorage.getItem("normalNickListLS") === null) {
         localStorage.setItem("normalNickListLS", JSON.stringify(normalNickListTemp));
     }
@@ -49,7 +53,8 @@ function levelEasy() {
     var easyNickListTemp = ['BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK', 'BRAK'];
     var easyScoreListTemp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     var temp1, temp2, temp3;
-
+    //localStorage.setItem("easyNickListLS", JSON.stringify(easyNickListTemp));
+    //localStorage.setItem("easyScoreListLS", JSON.stringify(easyScoreListTemp));
     if (localStorage.getItem("easyNickListLS") === null) {
         localStorage.setItem("easyNickListLS", JSON.stringify(easyNickListTemp));
     }
@@ -131,4 +136,65 @@ function isItGoodScore(x) {
             break;
     }
     return yesOrNo;
+}
+
+function sortResults(x,tempName) {
+    var temp1, temp2, temp3, j, i, y, z;
+    var toParse = sessionStorage.getItem('time');
+    switch (toParse) {
+        case '40':
+            temp1 = localStorage.getItem("easyScoreListLS");
+            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp1 = localStorage.getItem("easyNickListLS");
+            temp3 = JSON.parse(temp1);/*tu mam liste imion*/
+            break;
+        case '30':
+            temp1 = localStorage.getItem("normalScoreListLS");
+            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp1 = localStorage.getItem("normalNickListLS");
+            temp3 = JSON.parse(temp1);/*tu mam liste imion*/
+            break;
+        case '20':
+            temp1 = localStorage.getItem("hardScoreListLS");
+            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp1 = localStorage.getItem("hardNickListLS");
+            temp3 = JSON.parse(temp1);/*tu mam liste imion*/
+            break;
+    }
+    temp2[9] = x;
+    temp3[9] = tempName;
+    console.log(temp2);
+    alert('');
+
+    for (j = 0; j < temp2.length - 1; j++)
+        for (i = 0; i < temp2.length - 1; i++)
+            if (temp2[i] > temp2[i + 1]) {
+                y = temp2[i]; temp2[i] = temp2[i + 1]; temp2[i + 1] = y;
+                z = temp3[i]; temp3[i] = temp3[i + 1]; temp3[i + 1] = z;
+            };
+    temp2 = temp2.reverse();
+    temp3 = temp3.reverse();
+    
+    switch (toParse) {
+        case '40':
+            localStorage.setItem("easyNickListLS", JSON.stringify(temp3));
+            localStorage.setItem("easyScoreListLS", JSON.stringify(temp2));
+            break;
+        case '30':
+            localStorage.setItem("normalNickListLS", JSON.stringify(temp3));
+            localStorage.setItem("normalScoreListLS", JSON.stringify(temp2));
+            break;
+        case '20':
+            localStorage.setItem("hardNickListLS", JSON.stringify(temp3));
+            localStorage.setItem("hardScoreListLS", JSON.stringify(temp2));
+            break;
+    }
+alert('Wynik zosta³ zapisany. Sprawdz listê najlepszych wyników w menu g³ównym.')        
+}
+
+function submit() {
+    playerName = document.getElementById("playername").value;
+    sortResults(points,playerName);
+    window.location.href = "#menu";
+    location.reload();
 }

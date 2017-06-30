@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -628,28 +628,30 @@
         <div data-role="header" class="header">
             <h1>Zasady gry</h1>
         </div>
-        <div data-role="main"  class="rules">
-            <p>Gra polega na odgadnięciu poprawnej kombinacji w jakiej zostały losowo ułożone kolorowe kule.<br> 
--	Gracz podczas jednej tury ma daną ilość czasu (ustaloną według poziomu trudności) na ustawienie kul w poprawnej kolejności i zatwierdzenie przyciskiem „Sprawdź”.<br> 
--	Aby ułożyć kombinację, należy kliknąć w pytajnik w aktywnym rzędzie, po czym wybrać kolor kuli z puli dostępnych kolorów na danym poziomie trudności tak aby zapełnić cały rząd kolorami.<br>
+        <div data-role="main" class="rules">
+            <p>
+                Gra polega na odgadnięciu poprawnej kombinacji w jakiej zostały losowo ułożone kolorowe kule.<br>
+                -	Gracz podczas jednej tury ma daną ilość czasu (ustaloną według poziomu trudności) na ustawienie kul w poprawnej kolejności i zatwierdzenie przyciskiem „Sprawdź”.<br>
+                -	Aby ułożyć kombinację, należy kliknąć w pytajnik w aktywnym rzędzie, po czym wybrać kolor kuli z puli dostępnych kolorów na danym poziomie trudności tak aby zapełnić cały rząd kolorami.<br>
 
-	<img src="img/rules_1.png"/> <br>
+                <img src="img/rules_1.png" /> <br>
 
--	Niezależnie od poziomu trudności gracz ma 8 tur na odgadnięcie kombinacji 4 kolorowych kul.<br>
--	Po każdej turze (po upłynięciu czasu lub zatwierdzeniu kombinacji) wyświetlona zostaje podpowiedź mówiąca o ilości poprawnie ułożonych kul lub o ilości poprawnych kolorów w rzędzie.<br>
+                -	Niezależnie od poziomu trudności gracz ma 8 tur na odgadnięcie kombinacji 4 kolorowych kul.<br>
+                -	Po każdej turze (po upłynięciu czasu lub zatwierdzeniu kombinacji) wyświetlona zostaje podpowiedź mówiąca o ilości poprawnie ułożonych kul lub o ilości poprawnych kolorów w rzędzie.<br>
 
-	<img src="img/rules_2.png"/><br>
+                <img src="img/rules_2.png" /><br>
 
--	Czerwona emotikona oznacza że jeden z kolorów nie występuje w kombinacji.<br>
--	Żółta emotikona oznacza, że w kombinacji znajduje poprawny kolor ale nie jest na swoim miejscu.<br>
--	Zielona emotikona oznacza, że w kombinacji znajduje się poprawnie ułożony kolor</p><br>
-            
+                -	Czerwona emotikona oznacza że jeden z kolorów nie występuje w kombinacji.<br>
+                -	Żółta emotikona oznacza, że w kombinacji znajduje poprawny kolor ale nie jest na swoim miejscu.<br>
+                -	Zielona emotikona oznacza, że w kombinacji znajduje się poprawnie ułożony kolor
+            </p><br>
+
             <p>Powodzenia!</p><br><br>
-            
-            
-                
 
-        
+
+
+
+
         </div>
         <div data-role="footer" class="footer">
             <a href="#menu" data-transition="pop" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">WRÓĆ</a>
@@ -895,6 +897,12 @@
             <a href="#bestresultseasy" id="easybtn2" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-corner-all backbutton">ŁATWY</a>
             <a href="#menu" data-transition="pop" class="ui-btn ui-icon-back ui-btn-icon-left ui-corner-all backbutton">MENU</a>
             <a href="#bestresultsnormal" id="normalbtn3" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all backbutton">NORMALNY</a>
+        </div>
+    </div>
+    <div data-role="page" id="takename">
+        <div id="nametaker">
+            <input type="text" placeholder="Podaj nazwe - max 10 znaków" maxlength="10" id="playername" />
+            <button id="playernamebtn" onclick="submit()">OK</button>
         </div>
     </div>
 </body>

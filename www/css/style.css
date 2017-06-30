@@ -414,6 +414,31 @@ body{
 
 /*Koniec styli dla Najlepsze wyniki*/
 
+/* Okno wprowadzania Imienia*/
+
+#takename{
+    background: url('../img/Splash.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#nametaker{
+    margin:auto;
+    width:60%;
+    margin-top:40%;
+}
+
+#takename input{
+    width:60%;
+}
+
+#takename button{
+    
+}
+
+/*Koniec wprowadzania imienia*/
+
+
 /* Menu wyboru koloru*/
 
 .navigation{

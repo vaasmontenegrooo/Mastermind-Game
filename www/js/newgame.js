@@ -828,8 +828,8 @@ function amIRight() {
             clearTimeout(temporaryTime);
             if (isItGoodScore(points) === true) {
                 alert('KONIEC RUNDY: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Twój wynik to ' + points + ' ! Gratulacje! Wpisz się na listę najlepszych wyników.');
-                window.location.href = "#menu";
-                location.reload();
+                window.location.href = "#takename";
+                
             }
             else {
                 alert('KONIEC RUNDY: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Twój wynik to ' + points + ' ! Niestety jest zbyt niski by trafić na listę najlepszych wyników.');
