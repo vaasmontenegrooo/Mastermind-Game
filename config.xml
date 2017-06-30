@@ -4,7 +4,7 @@
     id          = "MasterMind WSEI"
     versionCode = "1"
     version     = "1.0.0" >
-  <name>MasterMind</name>
+  <name>MasterMind WSEI</name>
 
   <description>
     MasterMind game
