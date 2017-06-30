@@ -825,7 +825,6 @@ function amIRight() {
                     console.log(points);
                     break;
             }
-            alert('dziala1');
             clearTimeout(temporaryTime);
             if (isItGoodScore(points) === true) {
                 alert('KONIEC RUNDY: ' + (round - 1) + '. BRAWO! Wszystkie ' + correct + ' kulki znajdują się na swoim miejscu. Twój wynik to ' + points + ' ! Gratulacje! Wpisz się na listę najlepszych wyników.');

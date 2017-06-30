@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+ï»¿window.addEventListener("load", function () {
     normalbtn1 = document.getElementById("normalbtn1");
     normalbtn1.addEventListener("click", levelNormal);
     normalbtn2 = document.getElementById("normalbtn2");
@@ -144,19 +144,19 @@ function sortResults(x,tempName) {
     switch (toParse) {
         case '40':
             temp1 = localStorage.getItem("easyScoreListLS");
-            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp2 = JSON.parse(temp1); /*tu mam liste wynikÃ³w*/
             temp1 = localStorage.getItem("easyNickListLS");
             temp3 = JSON.parse(temp1);/*tu mam liste imion*/
             break;
         case '30':
             temp1 = localStorage.getItem("normalScoreListLS");
-            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp2 = JSON.parse(temp1); /*tu mam liste wynikÃ³w*/
             temp1 = localStorage.getItem("normalNickListLS");
             temp3 = JSON.parse(temp1);/*tu mam liste imion*/
             break;
         case '20':
             temp1 = localStorage.getItem("hardScoreListLS");
-            temp2 = JSON.parse(temp1); /*tu mam liste wyników*/
+            temp2 = JSON.parse(temp1); /*tu mam liste wynikÃ³w*/
             temp1 = localStorage.getItem("hardNickListLS");
             temp3 = JSON.parse(temp1);/*tu mam liste imion*/
             break;
@@ -189,7 +189,7 @@ function sortResults(x,tempName) {
             localStorage.setItem("hardScoreListLS", JSON.stringify(temp2));
             break;
     }
-alert('Wynik zosta³ zapisany. Sprawdz listê najlepszych wyników w menu g³ównym.')        
+alert('Wynik zostaÅ‚ zapisany. Sprawdz listÄ™ najlepszych wynikÃ³w w menu gÅ‚Ã³wnym.')        
 }
 
 function submit() {
